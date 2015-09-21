@@ -1,0 +1,16 @@
+{
+    "name": "seanmorris/message",
+    "authors": [
+        {
+            "name": "Sean Morris",
+            "email": "sean@sean-morris.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SeanMorris\\Message\\Test\\": "test/",
+            "SeanMorris\\Message\\": "source/"
+        }
+    }
+}
