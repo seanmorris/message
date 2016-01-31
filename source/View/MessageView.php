@@ -1,13 +1,13 @@
 <?php
 namespace SeanMorris\Message\View;
 
-class MessageView extends \SeanMorris\Ids\View
+class MessageView extends \SeanMorris\Theme\View
 {
 	protected $text;
 	protected $icon;
 	protected $type = [];
 
-	public function preprocess()
+	public function preprocess(&$vars)
 	{
 		$this->text = $this->vars['object']->text();
 		$this->vars['icon'] = $this->icon;

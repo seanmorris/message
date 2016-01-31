@@ -1,8 +1,8 @@
 <?php
 namespace SeanMorris\Message\View;
-class MessageContainer extends \SeanMorris\Ids\View
+class MessageContainer extends \SeanMorris\Theme\View
 {
-	public function preprocess()
+	public function preprocess(&$vars)
 	{
 		$handler = $this->vars['object'];
 		$this->vars['messages'] = $handler->renderMessages($handler->flash());
