@@ -10,8 +10,4 @@ class MessageContainer extends \SeanMorris\Theme\View
 }
 __halt_compiler();
 ?>
-<div class = "messageContainer">
-	<?php foreach($messages as $message): ?>
-		<?php echo $message; ?>
-	<?php endforeach; ?>
-</div>
+<div class = "messageContainer"><?php foreach($messages as $message): ?><?php echo $message; ?><?php endforeach; ?></div>
