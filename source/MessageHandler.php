@@ -38,8 +38,10 @@ class MessageHandler
 		}
 
 		$messages = $session['flashMessages'];
-
+		
 		$session['flashMessages'] = [];
+
+		// \SeanMorris\Ids\Log::logException(new \Exception());
 
 		return $messages;
 	}
